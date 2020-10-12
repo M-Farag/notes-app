@@ -1,0 +1,15 @@
+name: Develop-WorkFlow
+
+on:
+  push:
+    branches: [develop]
+
+jobs:
+  first-develop-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: first command
+        run: echo Munchy World !!
